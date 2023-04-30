@@ -1,5 +1,5 @@
 # RTP protocol headers
-![img.png](docs/img.png)
+![img.png](docs/RTP_packet_digram.png)
 - version: 2 bits
 - padding: 1 bit
 - extension: 1 bit
@@ -10,7 +10,7 @@
 - timestamp: 32 bits
 
 # Send RTSP request `sendRtspRequest`
-![img_1.png](docs/img_1.png)
+![state_diagram.png](docs/state_diagram.png)
 Based on the state diagram to set up the guard conditions
 for sending a variety of Request codes
 - SETUP request <=> self.state = INIT
