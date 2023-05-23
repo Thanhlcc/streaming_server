@@ -10,7 +10,7 @@
 - timestamp: 32 bits
 
 # Send RTSP request `sendRtspRequest`
-![img_1.png](C:\Users\LAPTOP\Computer_Networking\asm1\docs\state_diagram.png)
+![img_1.png](docs/state_diagram.png)
 Based on the state diagram to set up the guard conditions
 for sending a variety of Request codes
 - SETUP request <=> self.state = INIT
