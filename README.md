@@ -1,5 +1,6 @@
 # RTP protocol headers
-![img.png](docs/img.png)
+
+![img.png](docs/RTP_packet_diagram.png)
 - version: 2 bits
 - padding: 1 bit
 - extension: 1 bit
@@ -10,7 +11,7 @@
 - timestamp: 32 bits
 
 # Send RTSP request `sendRtspRequest`
-![img_1.png](docs/img_1.png)
+![img_1.png](C:\Users\LAPTOP\Computer_Networking\asm1\docs\state_diagram.png)
 Based on the state diagram to set up the guard conditions
 for sending a variety of Request codes
 - SETUP request <=> self.state = INIT
@@ -21,7 +22,7 @@ for sending a variety of Request codes
 
 # User manual
 - Running server: `python server.py 3000`
-- Running client code `python ClientLauncher.py <serverIP> 3000 3001 movie.Mjpeg`
+- Running client code `python ClientLauncher.py localhost 3000 3001 movie.Mjpeg`
 
 # Extended requirements
 ## Q1: Statistics about RTP session

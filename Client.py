@@ -6,7 +6,7 @@ from PIL import Image, ImageTk
 # -------------------------------------Networking modules
 import socket, threading, os
 # -------------------------------------Internal modeules
-from RTP.RtpPacket import RtpPacket
+from RtpPacket import RtpPacket
 # --------------------------------------Debugging modules
 
 CACHE_FILE_NAME = "cache-"
@@ -58,7 +58,7 @@ class Client:
         # Create Play button
         self.start = ttk.Button(
             self.master,
-            text='Start',
+            text='Play',
             command=self.playMovie,
             width = 20,
             bootstyle="primary"
@@ -132,10 +132,10 @@ class Client:
             threading.Thread(target=self.listenRtp).start()
             self.sendRtspRequest('PLAY')
 
-    # def seek(self, event):
-    #     x = event.x_root - self.progressbar.winfo_rootx()
-    #     position = int((x / self.progressbar.winfo_width()))
-    #     seek_frameNumber = self.videoStream['fps'] * position
+    def seek(self, event):
+        x = event.x_root - self.progressbar.winfo_rootx()
+        position = int((x / self.progressbar.winfo_width()))
+        seek_frameNumber = self.videoStream['fps'] * position
     def listenRtp(self):
         """Listen for RTP packets."""
         # pdb.set_trace()
