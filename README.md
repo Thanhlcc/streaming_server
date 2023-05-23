@@ -1,6 +1,4 @@
 # RTP protocol headers
-<<<<<<< HEAD
-
 ![img.png](docs/RTP_packet_diagram.png)
 - version: 2 bits
 - padding: 1 bit
